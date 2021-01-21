@@ -56,6 +56,8 @@ import java.util.stream.Stream;
 
 import javax.lang.model.element.Modifier;
 
+import org.checkerframework.checker.nullness.qual.Nullable;
+
 import com.github.benmanes.caffeine.cache.node.AddConstructors;
 import com.github.benmanes.caffeine.cache.node.AddDeques;
 import com.github.benmanes.caffeine.cache.node.AddExpiration;
@@ -238,7 +240,8 @@ public final class NodeFactoryGenerator {
             + "holds keys strongly\nthen the key is returned. If the cache holds keys weakly "
             + "then a {@link $T}\nholding the key argument is returned.\n", lookupKeyType)
         .addModifiers(Modifier.PUBLIC, Modifier.DEFAULT)
-        .addParameter(Object.class, "key")
+        .addParameter(ParameterSpec.builder(Object.class, "key")
+            .addAnnotation(Nullable.class).build())
         .addStatement("return key")
         .returns(Object.class)
         .build();

@@ -289,7 +289,8 @@ final class TimerWheel<K extends Object, V extends Object> {
    * @param transformer a function that unwraps the value
    * @return an unmodifiable snapshot in the desired order
    */
-  public Map<K, V> snapshot(boolean ascending, int limit, Function<V, V> transformer) {
+  public Map<K, V> snapshot(boolean ascending,
+      int limit, Function<@Nullable V, @Nullable V> transformer) {
     requireArgument(limit >= 0);
 
     Map<K, V> map = new LinkedHashMap<>(Math.min(limit, cache.size()));
@@ -358,14 +359,14 @@ final class TimerWheel<K extends Object, V extends Object> {
     @Override public Node<K, V> getPreviousInVariableOrder() {
       return prev;
     }
-    @SuppressWarnings("NullAway")
+    @SuppressWarnings({"NullAway", "nullness"})
     @Override public void setPreviousInVariableOrder(@Nullable Node<K, V> prev) {
       this.prev = prev;
     }
     @Override public Node<K, V> getNextInVariableOrder() {
       return next;
     }
-    @SuppressWarnings("NullAway")
+    @SuppressWarnings({"NullAway", "nullness"})
     @Override public void setNextInVariableOrder(@Nullable Node<K, V> next) {
       this.next = next;
     }

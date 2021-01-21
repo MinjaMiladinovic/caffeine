@@ -64,7 +64,7 @@ final class SerializationProxy<K extends Object, V extends Object> implements Se
     }
     if (weigher != null) {
       builder.maximumWeight(maximumWeight);
-      builder.weigher((Weigher<Object, Object>) weigher);
+      builder.weigher((Weigher<? extends Object, ? extends Object>) weigher);
     }
     if (expiry != null) {
       builder.expireAfter(expiry);
@@ -91,7 +91,7 @@ final class SerializationProxy<K extends Object, V extends Object> implements Se
       builder.removalListener((RemovalListener<Object, Object>) removalListener);
     }
     if ((writer != null) && (writer != CacheWriter.disabledWriter())) {
-      builder.writer((CacheWriter<Object, Object>) writer);
+      builder.writer((CacheWriter<? extends Object, ? extends Object>) writer);
     }
     return builder;
   }

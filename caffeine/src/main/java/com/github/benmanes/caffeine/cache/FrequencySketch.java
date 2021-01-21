@@ -65,7 +65,7 @@ final class FrequencySketch<E extends Object> {
    * Creates a lazily initialized frequency sketch, requiring {@link #ensureCapacity} be called
    * when the maximum size of the cache has been determined.
    */
-  @SuppressWarnings("NullAway.Init")
+  @SuppressWarnings({"NullAway.Init", "nullness"})
   public FrequencySketch() {}
 
   /**
@@ -105,8 +105,7 @@ final class FrequencySketch<E extends Object> {
    * @param e the element to count occurrences of
    * @return the estimated number of occurrences of the element; possibly zero but never negative
    */
-  @NonNegative
-  public int frequency(E e) {
+  public @NonNegative int frequency(E e) {
     if (isNotInitialized()) {
       return 0;
     }

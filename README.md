@@ -1,6 +1,5 @@
 [![CodeScene System Mastery](https://staging.codescene.io/projects/32227/status-badges/system-mastery)](https://staging.codescene.io/projects/32227)
 
-
 [![CodeScene Code Health](https://staging.codescene.io/projects/32227/status-badges/code-health)](https://staging.codescene.io/projects/32227)
 
 [![Build Status](https://github.com/ben-manes/caffeine/workflows/build/badge.svg)](https://github.com/ben-manes/caffeine/actions?query=workflow%3Abuild)

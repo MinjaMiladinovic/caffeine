@@ -1,3 +1,4 @@
+
 [![Build Status](https://github.com/ben-manes/caffeine/workflows/build/badge.svg)](https://github.com/ben-manes/caffeine/actions?query=workflow%3Abuild)
 [![Coverage Status](https://img.shields.io/coveralls/ben-manes/caffeine.svg)](https://coveralls.io/r/ben-manes/caffeine?branch=master)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.ben-manes.caffeine/caffeine/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.ben-manes.caffeine/caffeine)
@@ -142,3 +143,12 @@ Snapshots of the development version are available in
 [dropwizard]: https://www.dropwizard.io
 [grails]: https://grails.org
 [quarkus]: https://quarkus.io
+
+
+[![CodeScene Code Health](https://codescene.io/projects/48512/status-badges/code-health)](https://codescene.io/projects/48512)
+
+[![CodeScene System Mastery](https://codescene.io/projects/48512/status-badges/system-mastery)](https://codescene.io/projects/48512)
+
+[![CodeScene Missed Goals](https://codescene.io/projects/48512/status-badges/missed-goals)](https://codescene.io/projects/48512)
+
+[![CodeScene general](https://codescene.io/images/analyzed-by-codescene-badge.svg)](https://codescene.io/projects/48512)

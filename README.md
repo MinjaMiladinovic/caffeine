@@ -152,3 +152,5 @@ Snapshots of the development version are available in
 [![CodeScene Missed Goals](https://codescene.io/projects/48512/status-badges/missed-goals)](https://codescene.io/projects/48512)
 
 [![CodeScene general](https://codescene.io/images/analyzed-by-codescene-badge.svg)](https://codescene.io/projects/48512)
+
+[![CodeScene Code Health](https://staging.codescene.io/projects/32227/status-badges/code-health?component-name=caffeine%2Fjcache)](https://staging.codescene.io/projects/32227/architecture/biomarkers?component=caffeine%2Fjcache)
